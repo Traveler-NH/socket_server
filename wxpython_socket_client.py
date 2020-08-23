@@ -2,7 +2,7 @@ import wx,socket,threading
 client=socket.socket()
 client.connect(('192.168.0.103',25561))
 def send(none): #定义发送信息的函数。
-    client.send(('客户1：'+textctrl_send.Value).encode('utf-8'))
+    client.send(('客户：'+textctrl_send.Value).encode('utf-8'))
     textctrl_send.Value=''
 def recv(): #定义函数给子线程接收信息。
     while True:
