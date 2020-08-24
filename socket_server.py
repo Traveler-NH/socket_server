@@ -27,8 +27,10 @@ def stop_thread(thread):
 
 import socket,threading
 server=socket.socket()
-server.bind(('192.168.0.103',25561))
+server.bind(('192.168.0.101',25565))
 server.listen(2) #监听客户以及设置监听的数量，如果想要更改可进入聊天服务器的客户的数量，直接更改此数字参数即可。
+chat_record=open('D:/chat_record.txt','a')
+chat_record.close()
 client_list=[]
 thread_list=[]
 conn_list=[]
