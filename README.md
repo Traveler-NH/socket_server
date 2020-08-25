@@ -1,4 +1,5 @@
-# socket_server
+# socket_server_and_client
+
 
 ## server
 这是一个用socket模块制作的网络通信程序服务端，采用多线程的方式来接收信息并把信息转发给所有连接到服务端的客户，从而实现实时通信的目的。
@@ -13,3 +14,6 @@
 当服务端接收到客户的信息时，会立即把信息存入到聊天记录文件```chat_recode.txt```中。
 
 在此声明，用于结束线程的函数来自```https://www.cnblogs.com/rainduck/archive/2013/03/29/2989810.html```。
+
+
+## client
